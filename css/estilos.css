@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    background-color: rgba(14, 109, 50, 0.7);
+    padding: 1rem;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+      .branding {
+    flex: 1;
+    text-align: center;
+
+    .header-titulo{
+        align-items: center;
+        font-size: 1.5;
+        }
+        .slogan {
+      font-size: 1rem;
+      font-style: italic;
+    }
+    }
+    .nav {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+
+    a {
+      color: #ccffcc;
+      text-decoration: none;
+      padding: 0.3rem 0.6rem;
+      transition: background 0.3s;
+
+      &:hover {
+        background: rgba(0, 255, 128, 0.15);
+        color: #fff;
+      }
+    }
+  }
+}
